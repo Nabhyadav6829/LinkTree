@@ -235,7 +235,7 @@ const LinkTree = () => {
         </div>
 
         {/* Stats Section */}
-        <div className={`grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl border-2 transition-all duration-300 ${
+        {/* <div className={`grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl border-2 transition-all duration-300 ${
           isDarkMode 
             ? 'bg-gray-900 border-gray-800' 
             : 'bg-white border-gray-200 shadow-md'
@@ -252,7 +252,7 @@ const LinkTree = () => {
             <div className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>100%</div>
             <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Passion</div>
           </div>
-        </div>
+        </div> */}
 
         {/* Footer */}
         <div className="text-center pb-8">
