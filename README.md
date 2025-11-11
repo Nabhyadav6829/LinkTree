@@ -1,12 +1,25 @@
-# React + Vite
+# LinkTree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, simple link-hub web application that lets you create a single landing page containing all your important links (socials, portfolio, blog, contact, etc.).
 
-Currently, two official plugins are available:
+## Description  
+This app empowers you to manage and share a personalized link page — perfect for bio links, portfolios, startup pages, event pages, or influencer profiles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features  
+- Create/edit a list of links (title + target URL + optional icon/image)  
+- Drag & drop or reorder links  
+- Customize landing-page appearance (theme, colors, background)  
+- Responsive design for mobile + desktop  
+- Share a public URL (e.g., `yourusername.linktree.app/yourname`)  
+- Optional analytics: track clicks/views per link  
+- Optional admin/login to manage your page  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack  
+- **Backend**: Node.js + Express (or whichever you used)  
+- **Frontend**: HTML, CSS, JavaScript (or React/Vue if applicable)  
+- **Database**: MongoDB / PostgreSQL (or JSON file/local storage)  
+- **Env Vars**:  
+  ```env
+  PORT=3000
+  DB_URI=<your-database-uri>
+  SESSION_SECRET=<your-secret>
