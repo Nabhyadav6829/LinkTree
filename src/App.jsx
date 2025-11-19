@@ -1,11 +1,10 @@
+
 // import React, { useState } from 'react';
 // import { Github, Linkedin, Mail, Globe, Sun, Moon, Copy, Check, ExternalLink } from 'lucide-react';
 // import image from './assets/profile.png'; // Ensure you have a profile image in the specified path
-
 // const LinkTree = () => {
 //   const [isDarkMode, setIsDarkMode] = useState(false);
 //   const [copiedLink, setCopiedLink] = useState(null);
-
 //   const profileData = {
 //     name: "Nabh Yadav",
 //     bio: "Full Stack Web Developer",
@@ -44,6 +43,12 @@
 //         description: "See My Projects and Code Repositories"
 //       },
 //       {
+//         title: "LeetCode",
+//         url: "https://leetcode.com/u/nabhyadav/",
+//         icon: <Globe className="w-5 h-5" />,
+//         description: "My LeetCode Profile"
+//       },
+//       {
 //         title: "LinkedIn Profile",
 //         url: "https://www.linkedin.com/in/nabh-yadav-aaa82a295/",
 //         icon: <Linkedin className="w-5 h-5" />,
@@ -57,7 +62,7 @@
 //           <div className="flex items-center space-x-2">
 //             <span>Ride_Ease Source Code</span>
 //             <button
-//               onClick={() => copyToClipboard("https://ride-ease-six.vercel.app/", 3)}
+//               onClick={() => copyToClipboard("https://ride-ease-six.vercel.app/", 4)}
 //               className="text-gray-400 hover:text-gray-600 transition-colors duration-300"
 //               title="Copy link"
 //             >
@@ -89,11 +94,9 @@
 //       }
 //     ]
 //   };
-
 //   const toggleTheme = () => {
 //     setIsDarkMode(!isDarkMode);
 //   };
-
 //   const copyToClipboard = async (url, index) => {
 //     try {
 //       await navigator.clipboard.writeText(url);
@@ -103,7 +106,6 @@
 //       console.error('Failed to copy: ', err);
 //     }
 //   };
-
 //   return (
 //     <div className={`min-h-screen transition-all duration-500 p-4 ${
 //       isDarkMode ? 'bg-black' : 'bg-gray-50'
@@ -114,14 +116,13 @@
 //           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='${isDarkMode ? '%23ffffff' : '%23000000'}' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
 //         }} />
 //       </div>
-
 //       {/* Theme Toggle Button */}
 //       <div className="fixed top-6 right-6 z-10">
 //         <button
 //           onClick={toggleTheme}
 //           className={`p-3 rounded-full transition-all duration-300 shadow-lg hover:scale-110 ${
-//             isDarkMode 
-//               ? 'bg-gray-800 text-white hover:bg-gray-700 border border-gray-700' 
+//             isDarkMode
+//               ? 'bg-gray-800 text-white hover:bg-gray-700 border border-gray-700'
 //               : 'bg-white text-black hover:bg-gray-100 border border-gray-200 shadow-md'
 //           }`}
 //         >
@@ -132,7 +133,6 @@
 //           )}
 //         </button>
 //       </div>
-
 //       <div className="max-w-lg mx-auto relative">
 //         {/* Profile Section */}
 //         <div className="text-center mb-10 pt-8">
@@ -148,7 +148,7 @@
 //               isDarkMode ? 'bg-green-500 border-black' : 'bg-green-500 border-white'
 //             }`}></div>
 //           </div>
-          
+         
 //           <h1 className={`text-4xl font-bold mb-3 transition-colors duration-300 ${
 //             isDarkMode ? 'text-white' : 'text-gray-900'
 //           }`}>
@@ -163,15 +163,14 @@
 //             isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
 //           }`}></div>
 //         </div>
-
 //         {/* Links Section */}
 //         <div className="space-y-4 mb-10">
 //           {profileData.links.map((link, index) => (
 //             <div
 //               key={index}
 //               className={`group flex items-center rounded-2xl border-2 transition-all duration-300 hover:scale-[1.02] ${
-//                 isDarkMode 
-//                   ? 'bg-gray-900 border-gray-800 hover:bg-gray-800 hover:border-gray-700 shadow-lg hover:shadow-2xl' 
+//                 isDarkMode
+//                   ? 'bg-gray-900 border-gray-800 hover:bg-gray-800 hover:border-gray-700 shadow-lg hover:shadow-2xl'
 //                   : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 shadow-md hover:shadow-xl'
 //               }`}
 //             >
@@ -196,15 +195,15 @@
 //                   </div>
 //                 </div>
 //               </div>
-              
+             
 //               <div className="flex items-center">
 //                 <a
 //                   href={link.url}
 //                   target="_blank"
 //                   rel="noopener noreferrer"
 //                   className={`p-6 border-l-2 transition-all duration-300 hover:scale-110 ${
-//                     isDarkMode 
-//                       ? 'border-gray-800 text-gray-400 hover:text-white hover:bg-gray-800' 
+//                     isDarkMode
+//                       ? 'border-gray-800 text-gray-400 hover:text-white hover:bg-gray-800'
 //                       : 'border-gray-200 text-gray-500 hover:text-gray-900 hover:bg-gray-50'
 //                   }`}
 //                   title="Visit link"
@@ -214,8 +213,8 @@
 //                 <button
 //                   onClick={() => copyToClipboard(link.url, index)}
 //                   className={`p-6 border-l-2 transition-all duration-300 hover:scale-110 ${
-//                     isDarkMode 
-//                       ? 'border-gray-800 text-gray-400 hover:text-white hover:bg-gray-800' 
+//                     isDarkMode
+//                       ? 'border-gray-800 text-gray-400 hover:text-white hover:bg-gray-800'
 //                       : 'border-gray-200 text-gray-500 hover:text-gray-900 hover:bg-gray-50'
 //                   }`}
 //                   title="Copy link"
@@ -233,11 +232,10 @@
 //             </div>
 //           ))}
 //         </div>
-
 //         {/* Stats Section */}
 //         {/* <div className={`grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl border-2 transition-all duration-300 ${
-//           isDarkMode 
-//             ? 'bg-gray-900 border-gray-800' 
+//           isDarkMode
+//             ? 'bg-gray-900 border-gray-800'
 //             : 'bg-white border-gray-200 shadow-md'
 //         }`}>
 //           <div className="text-center">
@@ -253,7 +251,6 @@
 //             <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Passion</div>
 //           </div>
 //         </div> */}
-
 //         {/* Footer */}
 //         <div className="text-center pb-8">
 //           <p className={`text-sm transition-colors duration-300 ${
@@ -266,10 +263,7 @@
 //     </div>
 //   );
 // };
-
 // export default LinkTree;
-
-
 
 
 
@@ -298,7 +292,7 @@ import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Globe, Sun, Moon, Copy, Check, ExternalLink } from 'lucide-react';
 import image from './assets/profile.png'; // Ensure you have a profile image in the specified path
 const LinkTree = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [copiedLink, setCopiedLink] = useState(null);
   const profileData = {
     name: "Nabh Yadav",
