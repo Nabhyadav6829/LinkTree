@@ -385,7 +385,7 @@ const LinkTree = () => {
               <Copy className="w-4 h-4" />
             </button>
             <a
-              href="https://medconnect-nabh.vercel.app/"
+              href="https://medconnect-inky.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 transition-colors duration-300"
