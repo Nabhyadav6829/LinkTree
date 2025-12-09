@@ -378,7 +378,7 @@ const LinkTree = () => {
           <div className="flex items-center space-x-2">
             <span>MedConnect Source Code</span>
             <button
-              onClick={() => copyToClipboard("https://medconnect-nabh.vercel.app/", 5)} // Adjust index if needed
+              onClick={() => copyToClipboard("https://medconnect-inky.vercel.app/", 5)} // Adjust index if needed
               className="text-gray-400 hover:text-gray-600 transition-colors duration-300"
               title="Copy link"
             >
